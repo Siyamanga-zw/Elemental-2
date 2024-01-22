@@ -98,14 +98,17 @@ body {
   .arrow {
     position: absolute;
     top: 50%;
-    right: 40px;
-    width: 100px;
-    height: 70px;
+    right: 4%; /* Adjusted right value */
+    width: 10%; /* Adjusted width value */
+    height: 50px; /* Adjusted height value */
+    max-width: 100px; /* Added max-width to prevent the arrow from exceeding its natural size */
+    transform: translateY(-50%);
     background: url("https://i.ibb.co/m93DhmY/Screenshot-2024-01-15-142720-removebg-preview.png");
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
   }
+  
 
   .bubbles {
     /* position: absolute; */
@@ -140,6 +143,9 @@ body {
     top:auto;
   
   }
+  .arrow {
+    right: 8%; /* Adjusted right value for smaller screens */
+  }
   /* .arrow{
     top:initial
   } */
@@ -158,6 +164,10 @@ header{
 .left, .right p{
   font-size:xx-small;
     }
+    .arrow {
+    right: 12%; /* Further adjusted right value for even smaller screens */
+    max-width: 80px; /* Adjusted max-width for even smaller screens */
+  }
 }
 /* Media Queries */
 
@@ -227,21 +237,14 @@ header{
     .box-big{
       width: 100%;
     }
-    /* content{
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    } */
+  
   }
   
 
   /* boxes */
   .contain {
-    padding: 0 120px; /* Add padding to the sides for the default screen */
+    padding: 0 120px; 
 }
-  /* Apply basic styling to the boxes and spans */
-
-
 .box-big {
   background-color: #061b2c;
 padding-left: 20px;
@@ -273,7 +276,7 @@ width: auto;
 
 }
 
-/* Apply flexbox layout for small screens */
+/*  flexbox layout for small screens */
 @media (max-width: 1050px) {
 .container-1{
   display: grid;
@@ -287,7 +290,7 @@ width: auto;
   }
 }
 
-/* Apply grid layout for screens 750px and above with 10px gaps */
+/*  grid layout for screens 750px and above with 10px gaps */
 @media (min-width: 750px) {
   .contain {
       display: grid;
@@ -295,53 +298,6 @@ width: auto;
       gap: 10px;
   }
 }
-
-
-  /* .box-big{
-    width:400px;
-    height:200px;
-    background-color: #061b2c;
-    color:white; 
-    
-  }
-  .box-big span{
-    
-    margin-top: -80%;
-   
-    padding-left: 20px;
-  }
-  
- h3{
-  font-weight: 200;
-  font-size: 18px;
-  margin-top: -4%;
-  padding-left: 20px;
- }
-  .container-1{
-    display:flex;
-
-  }
-  .container-1 p{
-    font-size: 12px;
-  }
-  .block p{
-    display:block;
-    background-color:#234AC1;
-    margin-top: 10px;
-    margin-right: 10px;
-    color:#fff;
-    height:25px;
-    width:145px;
-    font-weight: 400;
-    font-size: 10px;
- 
-  }
-  .block span{
-    font-size: 12px;
-    color:#2679AB ;
-    
-  } */
-  
 
   @media only screen and (max-width: 380px) {
     .box-big{
