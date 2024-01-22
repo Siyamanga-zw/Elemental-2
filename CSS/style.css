@@ -41,9 +41,6 @@ body {
   }  
  
   /* hero */
-  /* main{
-    height: 100vh;
-  } */
   .hero {
     display: flex;
     justify-content: space-between;
@@ -111,13 +108,11 @@ body {
   }
 
   .bubbles {
-    position: absolute;
-    bottom: 10px;
-    left: 80%;
-    transform: translateX(-50%);
+    /* position: absolute; */
+    position: relative;
+    top:-30px;
+    left: 70%;
     display: flex;
-  
-  
   }
 
   .bubble {
@@ -232,41 +227,87 @@ header{
     .box-big{
       width: 100%;
     }
+    /* content{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    } */
   }
   
 
   /* boxes */
-  #content{
-    display: flex;
-    grid-template-columns:20px
-  
-
- 
-    /* justify-content:center;
-    align-items: flex-start; */
-    /* gap:5px; */
-   
-
-  }
-  @media only screen and (max-width: 1100px){
-#content{
-  display: grid;
-  grid-template-columns: auto auto auto;
+  .contain {
+    padding: 0 120px; /* Add padding to the sides for the default screen */
 }
-  }
+  /* Apply basic styling to the boxes and spans */
 
-  .box-big{
-    flex-direction:column;
-    width:300px;
-    height:100px;
+
+.box-big {
+  background-color: #061b2c;
+padding-left: 20px;
+width: auto;
+ 
+}
+
+.box-big span {
+  font-size: 40px;
+  color:#2679AB;
+ 
+}
+.box-big  h3{
+  color:#fff;
+  font-weight: 300;
+}
+
+.container-1 {
+  gap:10px;
+  display: flex;
+  justify-content: space-between;
+}
+.block{
+  background-color: #234AC1;
+  margin-top: 10px; 
+  width:100%;
+  height: fit-content;
+  font-size: x-small;
+
+}
+
+/* Apply flexbox layout for small screens */
+@media (max-width: 1050px) {
+.container-1{
+  display: grid;
+ justify-content:stretch;
+}
+}
+@media (max-width: 749px) {
+  .contain {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+/* Apply grid layout for screens 750px and above with 10px gaps */
+@media (min-width: 750px) {
+  .contain {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+  }
+}
+
+
+  /* .box-big{
+    width:400px;
+    height:200px;
     background-color: #061b2c;
     color:white; 
     
   }
   .box-big span{
-    font-size: 40px;
+    
     margin-top: -80%;
-    color:#2679AB;
+   
     padding-left: 20px;
   }
   
@@ -299,7 +340,8 @@ header{
     font-size: 12px;
     color:#2679AB ;
     
-  }
+  } */
+  
 
   @media only screen and (max-width: 380px) {
     .box-big{
