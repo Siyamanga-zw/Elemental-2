@@ -117,7 +117,7 @@ body {
   
 
   .bubbles {
-    position: sticky;
+    position: relative;
     top:-30px;
     left: 80%;
     display: flex;
