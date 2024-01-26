@@ -296,6 +296,11 @@ width: auto;
   font-weight: 600;
   font-size:20px;
 }
+.block p {
+  margin: 0;
+  padding-top: 10px; /* Remove default margin */
+}
+
 .foot{
   height:100px;
 }
