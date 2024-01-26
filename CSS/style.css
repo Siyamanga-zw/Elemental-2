@@ -298,7 +298,7 @@ width: auto;
 }
 .block p {
   margin: 0;
-  padding-top: 10px; /* Remove default margin */
+  padding-top: 10px; 
 }
 
 .foot{
@@ -320,13 +320,22 @@ width: auto;
   .contain {
       display: flex;
       flex-direction: column;
-      padding: 0 90px;
+    
   }
   .bubbles{
   
     left: 70%;
 
   }
+ 
+}
+@media (max-width: 580px){
+.contain{
+  padding: 0 40px;
+}
+#sub-hero{
+  padding:0 40px;
+}
 }
 
 @media (min-width: 750px) {
@@ -334,6 +343,7 @@ width: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
+      padding:0 90px;
   }
   .arrow{
 height:30px;
@@ -353,5 +363,6 @@ height:30px;
       display: grid;
       width:100%;
     }
+    
   }
 
