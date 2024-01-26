@@ -343,7 +343,6 @@ width: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      padding:0 90px;
   }
   .arrow{
 height:30px;
