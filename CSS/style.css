@@ -213,7 +213,7 @@ header{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 0 90px;
+      padding: 0 100px;
     }
     .contain{
       padding: 0 100px;
@@ -320,7 +320,7 @@ width: auto;
   .contain {
       display: flex;
       flex-direction: column;
-    
+    padding:0 100px;
   }
   .bubbles{
   
