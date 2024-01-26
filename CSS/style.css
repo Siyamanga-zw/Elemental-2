@@ -240,6 +240,8 @@ header{
   
     .box-big{
       width: 100%;
+      font-weight: 200;
+      height: 150px;
     }
     .bubble{
       width: 12px;
@@ -315,6 +317,11 @@ width: auto;
       flex-direction: column;
       padding: 0 90px;
   }
+  .bubbles{
+  
+    left: 70%;
+
+  }
 }
 
 @media (min-width: 750px) {
@@ -323,6 +330,10 @@ width: auto;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
   }
+  .arrow{
+height:30px;
+  }
+
  
 }
 
